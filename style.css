@@ -1,0 +1,226 @@
+:root {
+    --blue: #3f7dc0;
+    --red: #d84f4f;
+    --light-gray: #e5e5e5;
+    --light-light-gray: #e5e5e54a;
+    --gray: #999999;
+}
+:root * {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a {
+    color: var(--blue);
+    font-weight: 600;
+    text-decoration: none;
+}
+h2 {
+    font-size: 18px;
+    margin: 0;
+}
+header {
+    height: 40px;
+    background-color: var(--blue);
+    width: 100%;
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+}
+form {
+    width: 340px;
+}
+form:invalid .send-link, .disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.field {
+    margin-bottom: 21px;
+    text-align: left;
+}
+.btn {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    background-color: var(--blue);
+    color: white;
+    border: 0;
+    display: block;
+    width: 340px;
+    padding: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1;
+    outline: 2px solid var(--blue);
+    margin-left: auto;
+    margin-right: auto;
+}
+.optional-btn {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    background-color: var(--light-light-gray);
+    color: black;
+    border: 0;
+    width: 340px;
+    height: 40px;
+    align-content: space-evenly;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 11px;
+    line-height: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    outline: 2px solid var(--gray);
+}
+.secondary {
+    background-color: white;
+    color: var(--blue);
+}
+.textfield {
+    width: 100%;
+    border-radius: 5px;
+    padding: 11px;
+    border: 1px solid var(--light-gray);
+}
+.textfield:required:invalid, .invalid {
+    border-color: var(--red);
+}
+label {
+    font-size: 13px;
+    color: var(--gray);
+}
+#password {
+    padding-right: 40px;
+}
+.password-wrapper {
+    position: relative;
+}
+.toggle {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    width: 20px;
+}
+.toggle {
+    fill: var(--gray);
+    cursor: pointer;
+}
+input[type='text'] + .toggle {
+    fill: var(--blue);
+}
+.error {
+    width: 340px;
+    background-color: #D84F4F29;
+    border-radius: 4px;
+    color: var(--red);
+    display: flex;
+    font-size: 13px;
+    margin-bottom: 21px;
+}
+.error svg {
+    width: 16px;
+    margin: 11px;
+}
+.error p {
+    margin-right: 11px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+}
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+}
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 11px;
+}
+.buttons-wrapper {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.car-icon {
+    fill: var(--gray);
+    width: 35px;
+}
+.index {
+    width: 340px;
+}
+.errorIcn {
+    width: 145px;
+    margin-bottom: 30px;
+    transform: translateX(-10px);
+}
+.errorIcn path {
+    fill: #a3a3a3;
+}
+.errorIcn .errorIcn__path-2 {
+    fill: #dbdcdd
+}
+.forgotten-password {
+    margin-top: 20px;
+    text-align: left;
+}
+.double-btns {
+    display: grid;
+    gap:20px;
+    grid-template-columns: 1fr 1fr;
+}
+.done-btns {
+    width: 340px;
+    margin-top: 55px;
+}
+.doneIcn {
+    fill: #72BF88;
+    width: 40px;
+    margin-bottom: 20px;
+}
+.hidden {
+    display: none;
+}
+.mfa-register-note {
+    width: 340px;
+    font-size: 13px;
+    color: var(--blue);
+}
+.mfa-6-digit-code {
+    font-size: 32px;
+    width: 140px;
+    padding:3pt;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align:center;
+    border-radius: 5px;
+    border: 2px solid var(--gray);
+}
+.mfa-field {
+    margin-bottom: 21px;
+    text-align: center;
+}
+input[type="submit"].btn:hover {
+    cursor:pointer;
+
+}
