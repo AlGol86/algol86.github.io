@@ -8,14 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href=style.css>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header></header>
 <main>
     <div class="index">
         <h2>Welcome</span></h2>
-        <p><a href=google.com class="btn">Test button</a></p>
+        <p><a href=https://google.com class="btn">Test button</a></p>
+		<form action="http://localhost:8080/" method="put" id="login-with-mfa">
+                <div class="mfa-field">
+                   
+                    <input type="text" required="" autofocus="" id="6-digit-code" name="s" placeholder="xxxxxx" maxlength="6" class="mfa-6-digit-code" inputmode="numeric" pattern="\d{6}">
+                </div>
+                <p>
+                   
+                    <input type="submit" value="SUBMIT code" class="btn">
+                </p>
+            </form>
     </div>
 </main>
 </body>
